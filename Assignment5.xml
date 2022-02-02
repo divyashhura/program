@@ -1,0 +1,35 @@
+<!--TestNG XML File for Assignment 5:-->
+
+<suite name="All Test Suite">
+    <test name="Test1">
+        <groups>
+            <run>
+                <include name="log"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="DemoTestng1.AccessPage">
+                <methods>
+                    <include name="login"/>
+                    <include name="verify"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test2">
+        <groups>
+            <run>
+                <include name="access"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="DemoTestng1.AccessPage">
+                <methods>
+                    <include name="verify"/>
+                    <include name="forgetpass"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
