@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes">
+    <test verbose="2" preserve-order="true" name="ParallelTesting">
+        <classes>
+            <class name="ParallelExecution.ParallelChrome">
+                <methods>
+                    <include name="launch_chrome"/>
+                    <include name="login"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+            <class name="ParallelExecution.ParallelFirefox">
+                <methods>
+                    <include name="launch_firefox"/>
+                    <include name="login"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
