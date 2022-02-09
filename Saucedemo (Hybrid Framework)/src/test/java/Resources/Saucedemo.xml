@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/DivyashSinghHura/IdeaProjects/Saucedemo (Hybrid Framework)/src/test/java/Test">
+        <classes>
+            <class name="Test.LoginModule">
+                <methods>
+                    <include name="TestLog"/>
+                    <include name="TestLog2"/>
+                </methods>
+            </class>
+            <class name="Test.VerifyHomePage">
+                <methods>
+                    <include name="TestLog"/>
+                    <include name="checkBagPackPic"/>
+                    <include name="checkBikeLightPic"/>
+                    <include name="checkJacketPic"/>
+                    <include name="checkOneSiePic"/>
+                    <include name="checkTshirtPic"/>
+                    <include name="checkBagPackLink"/>
+                    <include name="checkBikeLightLink"/>
+                    <include name="checkJacketLink"/>
+                    <include name="checkOnesieLink"/>
+                    <include name="checkTshirtLink"/>
+                    <include name="checkTRedLink"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
