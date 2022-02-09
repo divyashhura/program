@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Checking Login functionality with valid Login Credentials",
+        "description": "",
+        "id": "checking-login-functionality-of-the-application;checking-login-functionality-with-valid-login-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9192919400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "LoginPage.UserOnLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98851400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username in username textfield",
+            "match": {
+              "location": "LoginPage.UserEntersUsername()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59402800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters password in password textfield",
+            "match": {
+              "location": "LoginPage.UserEntersPassword()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5211901400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "LoginPage.UserClicksLogin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11284000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "LoginPage.VerifyHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checking Login Functionality of the Application",
+    "description": "",
+    "id": "checking-login-functionality-of-the-application",
+    "keyword": "Feature",
+    "uri": "C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework/src/test/java/Feature/Login.feature",
+    "tags": []
+  }
+]
