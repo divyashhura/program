@@ -1,17 +1,7 @@
-<!--TestNG XML File for Assignment 4:-->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/DivyashSinghHura/IdeaProjects/program/DemoTestNG">
-        <classes>
-            <class name="DemoTestNG.Homepage">
-                <methods>
-                    <include name="log"/>
-                    <include name="logout"/>
-                </methods>
-            </class>
-        </classes>
+    <test verbose="2" preserve-order="true" name="BDD Testing">
+        <classes/>
     </test>
 </suite>
