@@ -3,69 +3,58 @@
     "line": 1,
     "elements": [
       {
-        "line": 9,
+        "line": 2,
         "name": "Checking Login functionality with valid Login Credentials",
         "description": "",
-        "id": "checking-functionality-of-the-login-page-of-orangehrm-website;checking-login-functionality-with-valid-login-credentials;;2",
+        "id": "checking-functionality-of-the-login-page-of-orangehrm-website;checking-login-functionality-with-valid-login-credentials",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7892990600,
+              "duration": 11343107400,
               "status": "passed"
             },
             "line": 3,
             "name": "User is on Login Page",
             "match": {
-              "location": "LoginPage.UserOnLoginPage()"
+              "location": "LoginSD.LoginPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d98.0.4758.82)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSDT010\u0027, ip: \u002710.10.30.196\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\\Users\\DIVYAS~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b6b2d098cf8d7b0cc52d3cb33f1f6df8\n*** Element info: {Using\u003did, value\u003dtxtUsername}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinition.LoginPage.UserEnters(LoginPage.java:22)\r\n\tat ✽.User enters \"admin\" and \"admin123\" in user and pass field(C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework/src/test/java/Feature/01_LoginPage.feature:4)\r\n",
-              "duration": 36935100,
-              "status": "failed"
+              "duration": 956627800,
+              "status": "passed"
             },
             "line": 4,
-            "name": "User enters \"admin\" and \"admin123\" in user and pass field",
+            "name": "User enters username and password in user and pass field",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"admin123\"",
-                  "offset": 24
-                }
-              ],
-              "location": "LoginPage.UserEnters(String,String)"
+              "location": "LoginSD.UserLogin()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 19400,
-              "status": "skipped"
+              "duration": 5039042000,
+              "status": "passed"
             },
             "line": 5,
             "name": "User clicks on login button",
             "match": {
-              "location": "LoginPage.UserClicksLogin()"
+              "location": "LoginSD.LoginButton()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 11800,
-              "status": "skipped"
+              "duration": 13969900,
+              "status": "passed"
             },
             "line": 6,
             "name": "User is on Home Page",
             "match": {
-              "location": "LoginPage.VerifyHomePage()"
+              "location": "LoginSD.UserOnHomePage()"
             },
             "keyword": "And "
           }
@@ -76,111 +65,89 @@
     "description": "",
     "id": "checking-functionality-of-the-login-page-of-orangehrm-website",
     "keyword": "Feature",
-    "uri": "C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework/src/test/java/Feature/01_LoginPage.feature",
+    "uri": "C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework(POM)/src/test/java/Feature/01_Login.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "line": 11,
-        "name": "User is on Recruitment Page",
+        "line": 2,
+        "name": "User is on Home Page",
         "description": "",
-        "id": "checking-functionality-of-the-recruit-page-of-orangehrm-website;user-is-on-recruitment-page;;2",
+        "id": "checking-functionality-of-the-home-page-of-orangehrm-website;user-is-on-home-page",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d98.0.4758.82)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSDT010\u0027, ip: \u002710.10.30.196\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\\Users\\DIVYAS~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b6b2d098cf8d7b0cc52d3cb33f1f6df8\n*** Element info: {Using\u003dlink text, value\u003dRecruitment}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinition.RecruitPage.RecruitPage(RecruitPage.java:12)\r\n\tat ✽.User clicks on Recruitment tag(C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework/src/test/java/Feature/03_RecruitPage.feature:3)\r\n",
-              "duration": 8415100,
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"PageFactory.ObjectFactory.getlogin()\" because \"StepDefinition.HomePageSD.obj\" is null\r\n\tat StepDefinition.HomePageSD.UserClickPIM(HomePageSD.java:16)\r\n\tat ✽.User clicks on PIM tag(C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework(POM)/src/test/java/Feature/02_HomePage.feature:3)\r\n",
+              "duration": 1809900,
               "status": "failed"
             },
             "line": 3,
-            "name": "User clicks on Recruitment tag",
+            "name": "User clicks on PIM tag",
             "match": {
-              "location": "RecruitPage.RecruitPage()"
+              "location": "HomePageSD.UserClickPIM()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 11600,
+              "duration": 18500,
               "status": "skipped"
             },
             "line": 4,
-            "name": "User clicks on Candidates tag",
+            "name": "User clicks on Add Employee tag",
             "match": {
-              "location": "RecruitPage.CandidatePage()"
+              "location": "HomePageSD.AddEmployee()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 9600,
+              "duration": 10800,
               "status": "skipped"
             },
             "line": 5,
-            "name": "User selects the Job Title",
+            "name": "User enters firstname and lastname in the fields",
             "match": {
-              "location": "RecruitPage.JobTitles()"
+              "location": "HomePageSD.UserEnterDetails()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6800,
+              "duration": 5300,
               "status": "skipped"
             },
             "line": 6,
-            "name": "User selects the Vacancy",
+            "name": "User enters username and password",
             "match": {
-              "location": "RecruitPage.JobVacancy()"
+              "location": "HomePageSD.UserAddDetails()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6400,
+              "duration": 7200,
               "status": "skipped"
             },
             "line": 7,
-            "name": "User selects the \"2022-04-02\" and \"2022-05-02\" in YYYY-MM-DD form",
+            "name": "User clicks on save button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"2022-04-02\"",
-                  "offset": 17
-                },
-                {
-                  "val": "\"2022-05-02\"",
-                  "offset": 34
-                }
-              ],
-              "location": "RecruitPage.CalenderDates(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6800,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "User clicks on Search button",
-            "match": {
-              "location": "RecruitPage.Search()"
+              "location": "HomePageSD.UserSaveDetails()"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Checking Functionality of the Recruit Page of OrangeHRM Website",
+    "name": "Checking Functionality of the Home Page of OrangeHRM Website",
     "description": "",
-    "id": "checking-functionality-of-the-recruit-page-of-orangehrm-website",
+    "id": "checking-functionality-of-the-home-page-of-orangehrm-website",
     "keyword": "Feature",
-    "uri": "C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework/src/test/java/Feature/03_RecruitPage.feature",
+    "uri": "C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework(POM)/src/test/java/Feature/02_HomePage.feature",
     "tags": []
   }
 ]

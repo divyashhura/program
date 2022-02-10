@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="17.361328">
+    <testcase classname="Checking Functionality of the Login Page of OrangeHRM Website" name="Checking Login functionality with valid Login Credentials" time="17.35872">
+        <system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters username and password in user and pass field...............passed
+Then User clicks on login button............................................passed
+And User is on Home Page....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Checking Functionality of the Home Page of OrangeHRM Website" name="User is on Home Page" time="0.002608">
+        <failure message="java.lang.NullPointerException: Cannot invoke &quot;PageFactory.ObjectFactory.getlogin()&quot; because &quot;StepDefinition.HomePageSD.obj&quot; is null&#13;&#10;&#9;at StepDefinition.HomePageSD.UserClickPIM(HomePageSD.java:16)&#13;&#10;&#9;at ✽.User clicks on PIM tag(C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework(POM)/src/test/java/Feature/02_HomePage.feature:3)&#13;&#10;"><![CDATA[When User clicks on PIM tag.................................................failed
+When User clicks on Add Employee tag........................................skipped
+Then User enters firstname and lastname in the fields.......................skipped
+Then User enters username and password......................................skipped
+And User clicks on save button..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "PageFactory.ObjectFactory.getlogin()" because "StepDefinition.HomePageSD.obj" is null
+	at StepDefinition.HomePageSD.UserClickPIM(HomePageSD.java:16)
+	at ✽.User clicks on PIM tag(C:/Users/DivyashSinghHura/IdeaProjects/BDD_Framework(POM)/src/test/java/Feature/02_HomePage.feature:3)
+]]></failure>
+    </testcase>
+</testsuite>
