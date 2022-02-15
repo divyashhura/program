@@ -29,8 +29,8 @@ public class Listeners extends TestListenerAdapter{
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Host name","localhost");
         extent.setSystemInfo("Enviornment", "QA");
-        extent.setSystemInfo("Project Name", "SourceDemo");
-        extent.setSystemInfo("user", "Sachin Kumar");
+        extent.setSystemInfo("Project Name", "SauceDemo");
+        extent.setSystemInfo("user", "Divyash Singh");
 
 
     }
